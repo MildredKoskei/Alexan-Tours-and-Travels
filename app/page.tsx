@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import FeaturedTours from '@/components/FeaturedTours';
@@ -13,7 +14,9 @@ export default function Home() {
       <Services />
       <FeaturedTours />
       <Categories />
-      <Destinations />
+      <Suspense fallback={<div className="section container">Loading destinations...</div>}>
+        <Destinations />
+      </Suspense>
       <Partners />
       <Blog />
     </>
