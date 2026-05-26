@@ -1,0 +1,31 @@
+.head {
+  margin-bottom: 40px;
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.partnerCard {
+  min-height: 110px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.partnerCard span {
+  max-width: 140px;
+}

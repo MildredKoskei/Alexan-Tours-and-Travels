@@ -1,0 +1,520 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/Blog.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.Blog_head__nKFkh {
+  margin-bottom: 40px;
+}
+
+.Blog_label__fy6YJ {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.Blog_grid__NB9e_ {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.Blog_card__i_441 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px;
+  min-height: 280px;
+}
+
+.Blog_cardBody__DcSdR h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.Blog_cardBody__DcSdR p {
+  color: var(--light-text);
+  line-height: 1.8;
+}
+
+.Blog_btn-outline__PZ9D_ {
+  align-self: flex-start;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/Categories.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Categories_intro__Piu8n {
+  margin-bottom: 40px;
+}
+
+.Categories_label__0uKyt {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.Categories_grid__x58nN {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.Categories_card__eQHQu {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 220px;
+  border-radius: 24px;
+}
+
+.Categories_icon__pi3yM {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(252, 163, 17, 0.12);
+  color: var(--primary-color);
+}
+
+.Categories_card__eQHQu h3 {
+  font-size: 1.25rem;
+}
+
+.Categories_card__eQHQu p {
+  color: var(--light-text);
+}
+
+.Categories_link__hNvWo {
+  margin-top: auto;
+  display: inline-flex;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/Destinations.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.Destinations_grid__ONb2n {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.Destinations_card__SutPb {
+  position: relative;
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Destinations_imagePlaceholder__3nrdR {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.Destinations_card__SutPb:hover .Destinations_imagePlaceholder__3nrdR {
+  transform: scale(1.1);
+}
+
+.Destinations_overlay__Nj9Gv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: #fff;
+}
+
+.Destinations_title__GzD6c {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.Destinations_card__SutPb:hover .Destinations_title__GzD6c {
+  transform: translateY(0);
+}
+
+.Destinations_explore__damC8 {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.Destinations_card__SutPb:hover .Destinations_explore__damC8 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Destinations_active___Xtlk {
+  border: 2px solid rgba(252, 163, 17, 0.9);
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/FeaturedTours.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.FeaturedTours_head__yFM_y {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.FeaturedTours_label__ew4MW {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.FeaturedTours_grid__Q9Uyu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.FeaturedTours_card__lF1iO {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  min-height: 360px;
+}
+
+.FeaturedTours_cardHeader__u_2KM {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.FeaturedTours_price__eUzda {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.FeaturedTours_badge__hwolW {
+  background: rgba(252, 163, 17, 0.12);
+  color: var(--primary-color);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.FeaturedTours_tourTitle__j7MA4 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.FeaturedTours_tourDesc__0qwv3 {
+  color: var(--light-text);
+  line-height: 1.8;
+}
+
+.FeaturedTours_meta__5Silh {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 14px;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.FeaturedTours_metaItem__wrOQJ {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+.FeaturedTours_link__W7cuf {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .FeaturedTours_head__yFM_y {
+    align-items: flex-start;
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/Hero.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.Hero_hero__bqvNd {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 20px 60px;
+}
+
+/* Stunning gradient background to act as placeholder since we don't have images yet */
+.Hero_heroBg__4biSy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(20, 33, 61, 0.9), rgba(0, 0, 0, 0.8)), 
+              url('https://images.unsplash.com/photo-1516483638261-f40af5ebbd39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+  z-index: -1;
+  animation: Hero_bgZoom__IOuUw 20s infinite alternate linear;
+}
+
+@keyframes Hero_bgZoom__IOuUw {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.Hero_content__WDVga {
+  max-width: 800px;
+  z-index: 1;
+  color: #fff;
+}
+
+.Hero_title__h4PJ2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  animation: Hero_fadeInUp__eGRou 1s ease-out forwards;
+}
+
+.Hero_subtitle__WCdI_ {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: #e5e5e5;
+  animation: Hero_fadeInUp__eGRou 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.Hero_actions__yXeUX {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation: Hero_fadeInUp__eGRou 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+@keyframes Hero_fadeInUp__eGRou {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Hero_badge__mnOYT {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(252, 163, 17, 0.2);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.Hero_searchCard__SSAm_ {
+  margin-top: 40px;
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.Hero_searchInput__hPxqO label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.Hero_searchInput__hPxqO div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.Hero_searchInput__hPxqO input {
+  flex: 1 1;
+  min-width: 220px;
+  padding: 16px 20px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #101010;
+}
+
+.Hero_searchInput__hPxqO button {
+  border-radius: 999px;
+  min-width: 140px;
+}
+
+.Hero_features__lrETc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-gap: 14px;
+  gap: 14px;
+  margin-top: 24px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.Hero_features__lrETc span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 768px) {
+  .Hero_title__h4PJ2 {
+    font-size: 2.5rem;
+  }
+  .Hero_actions__yXeUX {
+    flex-direction: column;
+  }
+
+  .Hero_searchInput__hPxqO div {
+    flex-direction: column;
+  }
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/Partners.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.Partners_head__PMvQ6 {
+  margin-bottom: 40px;
+}
+
+.Partners_label__qaThm {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.Partners_grid__LtuTR {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.Partners_partnerCard__Yb3t8 {
+  min-height: 110px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.Partners_partnerCard__Yb3t8 span {
+  max-width: 140px;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/Services.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.Services_servicesGrid__aKI0N {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.Services_serviceCard__BdOGi {
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.Services_iconWrapper__tyVZL {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(252, 163, 17, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.Services_serviceCard__BdOGi:hover .Services_iconWrapper__tyVZL {
+  background: var(--primary-color);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.Services_serviceTitle__4sM2r {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.Services_serviceDesc__AzUVJ {
+  color: var(--light-text);
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+@media (prefers-color-scheme: light) {
+  .Services_serviceDesc__AzUVJ {
+    color: #444;
+  }
+}
+
