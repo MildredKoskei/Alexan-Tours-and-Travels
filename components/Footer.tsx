@@ -42,13 +42,13 @@ export default function Footer() {
           <h4 className={styles.title}>Contact Us</h4>
           <ul className={styles.links}>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <Mail size={18} color="var(--primary-color)" /> info@alexantours.com
+              <Mail size={18} color="var(--primary-color)" /> alexantours@gmail.com
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <Phone size={18} color="var(--primary-color)" /> +1 234 567 8900
+              <Phone size={18} color="var(--primary-color)" /> +254711604832
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <MapPin size={18} color="var(--primary-color)" /> Global HQ
+              <MapPin size={18} color="var(--primary-color)" /> Kilimani Business Centre, Kirichwa Rd, Nairobi
             </li>
           </ul>
           <div className={styles.social}>

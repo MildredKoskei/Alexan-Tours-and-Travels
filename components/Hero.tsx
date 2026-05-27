@@ -30,7 +30,8 @@ export default function Hero() {
 
     const match = destinations.find((dest) => dest.toLowerCase().includes(search));
     if (match) {
-      router.push(`/?destination=${encodeURIComponent(match)}#destinations`);
+      const slug = match.toLowerCase().replace(/\s+/g, '-');
+      router.push(`/destinations/${encodeURIComponent(slug)}`);
       return;
     }
 

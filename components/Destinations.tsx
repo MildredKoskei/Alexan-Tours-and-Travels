@@ -1,20 +1,61 @@
 "use client";
 
+import Link from 'next/link';
 import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import styles from './Destinations.module.css';
 
 const destinations = [
-  { name: 'Kenya', img: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Tanzania', img: 'https://images.unsplash.com/photo-1518182170546-076616fd4625?auto=format&fit=crop&w=800&q=80' },
-  { name: 'South Africa', img: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Dubai', img: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Singapore', img: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Thailand', img: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Zanzibar', img: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Turkey', img: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Malaysia', img: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Indonesia', img: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80' }
+  {
+    name: 'Kenya',
+    slug: 'kenya',
+    img: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Tanzania',
+    slug: 'tanzania',
+    img: 'https://images.unsplash.com/photo-1543007636-483b4a8af2f6?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'South Africa',
+    slug: 'south-africa',
+    img: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Dubai',
+    slug: 'dubai',
+    img: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Singapore',
+    slug: 'singapore',
+    img: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Thailand',
+    slug: 'thailand',
+    img: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Zanzibar',
+    slug: 'zanzibar',
+    img: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Turkey',
+    slug: 'turkey',
+    img: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Malaysia',
+    slug: 'malaysia',
+    img: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'Indonesia',
+    slug: 'indonesia',
+    img: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80'
+  }
 ];
 
 export default function Destinations() {
@@ -32,9 +73,9 @@ export default function Destinations() {
       <h2 className="section-title">Popular <span className="text-gradient">Destinations</span></h2>
       <div className={styles.grid}>
         {filtered.map((dest, index) => (
-          <div
+          <Link
             key={index}
-            id={dest.name.toLowerCase().replace(/\s+/g, '-')}
+            href={`/destinations/${dest.slug}`}
             className={`${styles.card} hover-scale ${selectedParam && dest.name.toLowerCase().includes(selectedParam) ? styles.active : ''}`}
           >
             <div
@@ -45,7 +86,7 @@ export default function Destinations() {
               <h3 className={styles.title}>{dest.name}</h3>
               <span className={styles.explore}>Explore →</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
