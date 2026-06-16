@@ -1,0 +1,39 @@
+.head {
+  margin-bottom: 40px;
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px;
+  min-height: 280px;
+}
+
+.cardBody h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.cardBody p {
+  color: var(--light-text);
+  line-height: 1.8;
+}
+
+.btn-outline {
+  align-self: flex-start;
+}
