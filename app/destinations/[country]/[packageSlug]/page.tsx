@@ -104,6 +104,21 @@ function PackageDetails({ pkg, country, img }: { pkg: TourPackage; country: stri
               </div>
             </div>
           )}
+
+          {/* Attractions Grid */}
+          {pkg.attractions && pkg.attractions.length > 0 && (
+            <div className={styles.section}>
+              <h2 className={styles.sectionTitle}>Places to Visit</h2>
+              <div className={styles.attractionsGrid}>
+                {pkg.attractions.map((attraction, idx) => (
+                  <div key={idx} className={styles.attractionCard}>
+                    <h3 className={styles.attractionName}>{attraction.name}</h3>
+                    <p className={styles.attractionDescription}>{attraction.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Right Sidebar */}

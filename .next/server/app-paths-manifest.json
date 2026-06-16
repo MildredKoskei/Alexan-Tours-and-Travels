@@ -1,6 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/destinations/[country]/page": "app/destinations/[country]/page.js",
   "/page": "app/page.js",
-  "/destinations/[country]/[packageSlug]/page": "app/destinations/[country]/[packageSlug]/page.js",
-  "/destinations/[country]/page": "app/destinations/[country]/page.js"
+  "/destinations/[country]/[packageSlug]/page": "app/destinations/[country]/[packageSlug]/page.js"
 }

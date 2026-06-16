@@ -11,6 +11,11 @@ export interface PackageDay {
   description: string;
 }
 
+export interface Attraction {
+  name: string;
+  description: string;
+}
+
 export interface TourPackage {
   title: string;
   slug: string;
@@ -21,6 +26,7 @@ export interface TourPackage {
   exclusions: string[];
   itinerary: PackageDay[];
   highlights: string[];
+  attractions?: Attraction[];
   country: string;
 }
 

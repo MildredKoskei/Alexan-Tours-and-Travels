@@ -32,7 +32,7 @@ export default function Footer() {
           <h4 className={styles.title}>Contact Us</h4>
           <ul className={styles.links}>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <Phone size={18} color="var(--primary-color)"/> Jack Omengo: +254748 234 171
+              <Phone size={18} color="var(--primary-color)"/> Andrew Omengo: +254748 234 171
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
               <MessageCircle size={18} color="var(--primary-color)"/> WhatsApp: +254748 234 171
