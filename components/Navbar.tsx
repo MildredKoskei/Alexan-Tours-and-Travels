@@ -29,14 +29,14 @@ export default function Navbar() {
       </Link>
       
       <ul className={styles.navLinks}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/#services">Services</Link></li>
+        <li><Link href="/#destinations">Destinations</Link></li>
+        <li><Link href="/#contact">Contact</Link></li>
       </ul>
 
       <div className={styles.actions}>
-        <button className="btn btn-primary">Book Now</button>
+        <Link href="/#contact" className="btn btn-primary">Book Now</Link>
       </div>
     </nav>
   );

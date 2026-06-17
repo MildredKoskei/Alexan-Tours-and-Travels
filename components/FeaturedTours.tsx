@@ -41,9 +41,9 @@ export default function FeaturedTours() {
             Featured <span className="text-gradient">Safari Packages</span>
           </h2>
         </div>
-        <a href="#destinations" className="btn btn-outline">
+        <Link href="/#destinations" className="btn btn-outline">
           View All Tours
-        </a>
+        </Link>
       </div>
 
       <div className={styles.grid}>

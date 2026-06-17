@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -18,9 +19,9 @@ export default function Hero() {
           <button className="btn btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem' }}>
             Plan Your Trip
           </button>
-          <button className="btn btn-outline" style={{ padding: '16px 40px', fontSize: '1.1rem', color: '#fff', borderColor: '#fff' }}>
+          <Link href="/#destinations" className="btn btn-outline" style={{ padding: '16px 40px', fontSize: '1.1rem', color: '#fff', borderColor: '#fff' }}>
             Explore Destinations
-          </button>
+          </Link>
         </div>
       </div>
     </section>

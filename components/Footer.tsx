@@ -32,16 +32,16 @@ export default function Footer() {
           <h4 className={styles.title}>Contact Us</h4>
           <ul className={styles.links}>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <Phone size={18} color="var(--primary-color)"/> Andrew Omengo: +254748 234 171
+              <Phone size={18} color="var(--primary-color)"/> Andrew Omengo: +254711604832
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <MessageCircle size={18} color="var(--primary-color)"/> WhatsApp: +254748 234 171
+              <MessageCircle size={18} color="var(--primary-color)"/> WhatsApp: +254711604832
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <Mail size={18} color="var(--primary-color)"/> info@alexantours.com
+              <Mail size={18} color="var(--primary-color)"/> alexantours@gmail.com
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <MapPin size={18} color="var(--primary-color)"/> Global HQ
+              <MapPin size={18} color="var(--primary-color)"/> Kilimani Business Centre, Kirichwa Rd, Nairobi
             </li>
           </ul>
         </div>
