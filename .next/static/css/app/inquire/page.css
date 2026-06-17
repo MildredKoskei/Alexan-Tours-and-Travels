@@ -1,0 +1,153 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/inquire/inquire.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.inquire_page__vYfS9 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.inquire_heading__Q5LYt {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.inquire_label__LzC15 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+}
+
+.inquire_title__6MgbR {
+  font-size: clamp(2.2rem, 3vw, 3.4rem);
+  margin-bottom: 20px;
+}
+
+.inquire_subtitle__gWq4G {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+.inquire_form__1Mdqr {
+  display: grid;
+  grid-gap: 24px;
+  gap: 24px;
+  max-width: 900px;
+}
+
+.inquire_formRow__DwKkC {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.inquire_formGroup__J60F_ {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #f4f7ff;
+}
+
+.inquire_formInput__4EvUZ,
+.inquire_formTextarea__z0tOP {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 16px 18px;
+  border-radius: 16px;
+  outline: none;
+}
+
+.inquire_formInput__4EvUZ:focus,
+.inquire_formTextarea__z0tOP:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(75, 111, 255, 0.18);
+}
+
+.inquire_formTextarea__z0tOP {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.inquire_errorText__dcCyu {
+  color: #ff8a80;
+  font-size: 0.95rem;
+}
+
+.inquire_successText__klzZq {
+  color: #8bf7c8;
+  font-size: 0.95rem;
+}
+
+.inquire_submitButton__LmNli {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.inquire_submitButton__LmNli:hover {
+  transform: translateY(-2px);
+  background: #3272ff;
+}
+
+.inquire_popupOverlay__iAE2v {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.inquire_popupDialog__MN6Ju {
+  background: rgba(10, 14, 33, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 32px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.inquire_popupDialog__MN6Ju h2 {
+  margin: 0 0 16px;
+  font-size: 1.75rem;
+}
+
+.inquire_popupDialog__MN6Ju p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.inquire_closeButton__hUGN4 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .inquire_formRow__DwKkC {
+    grid-template-columns: 1fr;
+  }
+}
+

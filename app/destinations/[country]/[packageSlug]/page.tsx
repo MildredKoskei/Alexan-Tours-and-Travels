@@ -130,9 +130,12 @@ function PackageDetails({ pkg, country, img }: { pkg: TourPackage; country: stri
               <span className={styles.priceValue}>{pkg.price}</span>
               <span className={styles.pricePer}>per person sharing</span>
             </div>
-            <a href="/#contact" className={`btn btn-primary ${styles.bookBtn}`}>
+            <Link
+              href={`/inquire?trip=${encodeURIComponent(pkg.title)}&destination=${encodeURIComponent(country)}`}
+              className={`btn btn-primary ${styles.bookBtn}`}
+            >
               <Phone size={18} /> Inquire / Book Now
-            </a>
+            </Link>
             <a
               href="https://wa.me/254748234171"
               target="_blank"

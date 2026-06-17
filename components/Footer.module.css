@@ -58,6 +58,69 @@
   color: var(--primary-color);
 }
 
+.contactForm {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #d3d9ef;
+  font-size: 0.95rem;
+}
+
+.formInput,
+.formTextarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  outline: none;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(105, 135, 255, 0.18);
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #3272ff;
+}
+
+.errorText {
+  color: #ff8a80;
+  font-size: 0.95rem;
+}
+
+.successText {
+  color: #8bf7c8;
+  font-size: 0.95rem;
+}
+
 .bottom {
   text-align: center;
   padding-top: 30px;

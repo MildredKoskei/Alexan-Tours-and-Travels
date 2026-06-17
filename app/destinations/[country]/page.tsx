@@ -102,7 +102,9 @@ export default function DestinationPage({ params }: { params: { country: string 
 
         <div className={styles.actionSection}>
           <p className={styles.text}>Ready to plan your unforgettable trip to {destination.name}?</p>
-          <a href="/#contact" className="btn btn-primary" style={{ marginTop: '20px' }}>Contact Us to Book</a>
+          <Link href={`/inquire?destination=${encodeURIComponent(destination.name)}`} className="btn btn-primary" style={{ marginTop: '20px' }}>
+            Contact Us to Book
+          </Link>
         </div>
       </div>
     </div>

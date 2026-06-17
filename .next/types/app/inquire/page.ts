@@ -1,8 +1,8 @@
-// File: C:\Users\Owner\OneDrive - National College of Ireland\Desktop\Alexan Tours and Travel Company\app\destinations\[country]\page.tsx
-import * as entry from '../../../../../app/destinations/[country]/page.js'
+// File: C:\Users\Owner\OneDrive - National College of Ireland\Desktop\Alexan Tours and Travel Company\app\inquire\page.tsx
+import * as entry from '../../../../app/inquire/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/destinations/[country]/page.js')
+type TEntry = typeof import('../../../../app/inquire/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

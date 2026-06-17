@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { Compass, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import styles from './Footer.module.css';
 
@@ -32,7 +33,7 @@ export default function Footer() {
           <h4 className={styles.title}>Contact Us</h4>
           <ul className={styles.links}>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <Phone size={18} color="var(--primary-color)"/> Andrew Omengo: +254711604832
+              <Phone size={18} color="var(--primary-color)"/> Alexan Tours and Travels: +254711604832
             </li>
             <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
               <MessageCircle size={18} color="var(--primary-color)"/> WhatsApp: +254711604832
@@ -44,6 +45,9 @@ export default function Footer() {
               <MapPin size={18} color="var(--primary-color)"/> Kilimani Business Centre, Kirichwa Rd, Nairobi
             </li>
           </ul>
+          <Link href="/inquire" className="btn btn-primary" style={{ marginTop: '20px', display: 'inline-flex' }}>
+            Inquire Now
+          </Link>
         </div>
       </div>
       

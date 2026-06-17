@@ -226,6 +226,70 @@ a {
   color: var(--primary-color);
 }
 
+.Footer_contactForm__FV2JK {
+  display: grid;
+  grid-gap: 16px;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.Footer_formGroup__XKpov {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #d3d9ef;
+  font-size: 0.95rem;
+}
+
+.Footer_formInput__NI_ZL,
+.Footer_formTextarea__aIVdW {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  outline: none;
+}
+
+.Footer_formInput__NI_ZL:focus,
+.Footer_formTextarea__aIVdW:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(105, 135, 255, 0.18);
+}
+
+.Footer_formTextarea__aIVdW {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.Footer_submitButton__OBceV {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.Footer_submitButton__OBceV:hover {
+  background: #3272ff;
+}
+
+.Footer_errorText__ANimW {
+  color: #ff8a80;
+  font-size: 0.95rem;
+}
+
+.Footer_successText__K0Wmi {
+  color: #8bf7c8;
+  font-size: 0.95rem;
+}
+
 .Footer_bottom__wxP7Z {
   text-align: center;
   padding-top: 30px;

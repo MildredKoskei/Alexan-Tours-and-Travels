@@ -12,11 +12,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/destinations/[country]/page": [
+    "/inquire/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/destinations/[country]/page.css",
-      "static/chunks/app/destinations/[country]/page.js"
+      "static/css/app/inquire/page.css",
+      "static/chunks/app/inquire/page.js"
     ]
   }
 }
