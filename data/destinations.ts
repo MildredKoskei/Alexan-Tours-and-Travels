@@ -33,7 +33,7 @@ export interface TourPackage {
 export const destinations: Destination[] = [
   { 
     name: "Kenya", 
-    img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
+    img: "/images/kenya.png",
     activities: "Safari Drives, Balloon Safaris",
     explanation: "Witness the Great Migration and explore the vast savannahs."
   },
