@@ -1,5 +1,6 @@
 import InquiryForm from './InquiryForm';
 import styles from './inquire.module.css';
+import { Suspense } from 'react';
 
 export const metadata = {
   title: 'Inquire Now | Alexan Tours',
@@ -17,7 +18,9 @@ export default function InquirePage() {
         </p>
       </div>
 
-      <InquiryForm />
+      <Suspense fallback={<div>Loading form…</div>}>
+        <InquiryForm />
+      </Suspense>
     </main>
   );
 }

@@ -1,22 +1,55 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-eed88d798c1a58ea.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-fbe785f8bf8e5a2f.js",
+      "static/chunks/main-app-b06ec514fee07271.js",
+      "static/chunks/app/_not-found/page-6bbf6d64fd14e58e.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-eed88d798c1a58ea.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-fbe785f8bf8e5a2f.js",
+      "static/chunks/main-app-b06ec514fee07271.js",
+      "static/css/f347a685872bd95b.css",
+      "static/chunks/231-c9de2de264fc0636.js",
+      "static/chunks/app/layout-78defb95fed9a709.js"
+    ],
+    "/destinations/[country]/[packageSlug]/page": [
+      "static/chunks/webpack-eed88d798c1a58ea.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-fbe785f8bf8e5a2f.js",
+      "static/chunks/main-app-b06ec514fee07271.js",
+      "static/css/78c82809f0c675c5.css",
+      "static/chunks/231-c9de2de264fc0636.js",
+      "static/chunks/app/destinations/[country]/[packageSlug]/page-d3466e3bce05435f.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-eed88d798c1a58ea.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-fbe785f8bf8e5a2f.js",
+      "static/chunks/main-app-b06ec514fee07271.js",
+      "static/css/a5c5ff54e06d8ec7.css",
+      "static/chunks/231-c9de2de264fc0636.js",
+      "static/chunks/app/page-3e7d88af3d67d085.js"
     ],
     "/inquire/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/inquire/page.css",
-      "static/chunks/app/inquire/page.js"
+      "static/chunks/webpack-eed88d798c1a58ea.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-fbe785f8bf8e5a2f.js",
+      "static/chunks/main-app-b06ec514fee07271.js",
+      "static/css/dbd13e4505e37038.css",
+      "static/chunks/app/inquire/page-e62e78ece76cd3b3.js"
+    ],
+    "/destinations/[country]/page": [
+      "static/chunks/webpack-eed88d798c1a58ea.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-fbe785f8bf8e5a2f.js",
+      "static/chunks/main-app-b06ec514fee07271.js",
+      "static/css/c003e3770ad52242.css",
+      "static/chunks/231-c9de2de264fc0636.js",
+      "static/chunks/app/destinations/[country]/page-da04219f8b15c707.js"
     ]
   }
 }
