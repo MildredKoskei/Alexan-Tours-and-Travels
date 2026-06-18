@@ -14,6 +14,21 @@ export default function InquiryForm() {
   const [phone, setPhone] = useState('');
   const [trip, setTrip] = useState('');
   const [message, setMessage] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [countryOrigin, setCountryOrigin] = useState('');
+  const [duration, setDuration] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [adults, setAdults] = useState(1);
+  const [children, setChildren] = useState(0);
+  const [childAges, setChildAges] = useState({
+    '0-2': false,
+    '3-12': false,
+    '13-18': false,
+  });
+  const [safariType, setSafariType] = useState('Bush Only');
+  const [requestQuote, setRequestQuote] = useState(false);
   const [error, setError] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
@@ -29,16 +44,21 @@ export default function InquiryForm() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (!name.trim() || !email.trim() || !trip.trim() || !message.trim()) {
+    const fullName = `${firstName} ${lastName}`.trim();
+
+    if (!fullName || !email.trim() || !trip.trim() || !message.trim()) {
       setError('Please fill in your name, email, trip interest, and message.');
       return;
     }
 
     const recipient = 'alexantours@gmail.com';
-    const subject = encodeURIComponent(`Inquiry from Alexan Tours website: ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nTrip Interested In: ${trip}\n\nAdditional queries:\n${message}`
+    const subject = encodeURIComponent(
+      `Inquiry from Alexan Tours website: ${fullName}${requestQuote ? ' (Quote Requested)' : ''}`
     );
+
+    const bodyText = `Name: ${fullName}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone: ${phone}\nCountry of Origin: ${countryOrigin}\nTrip Interested In: ${trip}\nDuration (days): ${duration}\nTravel Start: ${startDate}\nTravel End: ${endDate}\nAdults: ${adults}\nChildren: ${children}\nChild Age Ranges: ${Object.entries(childAges).filter(([k,v])=>v).map(([k])=>k).join(', ') || 'N/A'}\nSafari Type: ${safariType}\nRequest Quote: ${requestQuote ? 'Yes' : 'No'}\n\nAdditional queries:\n${message}`;
+
+    const body = encodeURIComponent(bodyText);
 
     window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
     setSubmitted(true);
@@ -48,6 +68,55 @@ export default function InquiryForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
+      <div className={styles.formRow}>
+        <label className={styles.formGroup}>
+          <span>First Name</span>
+          <input
+            type="text"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className={styles.formInput}
+            placeholder="First Name"
+            required
+          />
+        </label>
+
+        <label className={styles.formGroup}>
+          <span>Last Name</span>
+          <input
+            type="text"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className={styles.formInput}
+            placeholder="Last Name"
+            required
+          />
+        </label>
+      </div>
+
+      <div className={styles.formRow}>
+        <label className={styles.formGroup}>
+          <span>Country of Origin</span>
+          <input
+            type="text"
+            value={countryOrigin}
+            onChange={(e) => setCountryOrigin(e.target.value)}
+            className={styles.formInput}
+            placeholder="e.g. Kenya"
+          />
+        </label>
+
+        <label className={styles.formGroup}>
+          <span>Phone Number</span>
+          <input
+            type="tel"
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
+            className={styles.formInput}
+            placeholder="+254 700 000 000"
+          />
+        </label>
+      </div>
       <div className={styles.formRow}>
         <label className={styles.formGroup}>
           <span>Your Name</span>
@@ -76,17 +145,6 @@ export default function InquiryForm() {
 
       <div className={styles.formRow}>
         <label className={styles.formGroup}>
-          <span>Phone Number</span>
-          <input
-            type="tel"
-            value={phone}
-            onChange={(event) => setPhone(event.target.value)}
-            className={styles.formInput}
-            placeholder="+254 700 000 000"
-          />
-        </label>
-
-        <label className={styles.formGroup}>
           <span>Trip / Package Interested In</span>
           <input
             type="text"
@@ -97,7 +155,100 @@ export default function InquiryForm() {
             required
           />
         </label>
+
+        <label className={styles.formGroup}>
+          <span>Duration of Tours (no. of days)</span>
+          <input
+            type="number"
+            min={1}
+            value={duration}
+            onChange={(e) => setDuration(e.target.value)}
+            className={styles.formInput}
+            placeholder="e.g. 7"
+          />
+        </label>
       </div>
+
+      <div className={styles.formRow}>
+        <label className={styles.formGroup}>
+          <span>Travel Start Date</span>
+          <input
+            type="date"
+            value={startDate}
+            onChange={(e) => setStartDate(e.target.value)}
+            className={styles.formInput}
+          />
+        </label>
+
+        <label className={styles.formGroup}>
+          <span>Travel End Date</span>
+          <input
+            type="date"
+            value={endDate}
+            onChange={(e) => setEndDate(e.target.value)}
+            className={styles.formInput}
+          />
+        </label>
+      </div>
+
+      <div className={styles.formRow}>
+        <label className={styles.formGroup}>
+          <span>No. of Adults</span>
+          <input
+            type="number"
+            min={1}
+            value={adults}
+            onChange={(e) => setAdults(Number(e.target.value))}
+            className={styles.formInput}
+          />
+        </label>
+
+        <label className={styles.formGroup}>
+          <span>No. of Children (0 if none)</span>
+          <input
+            type="number"
+            min={0}
+            value={children}
+            onChange={(e) => setChildren(Number(e.target.value))}
+            className={styles.formInput}
+          />
+        </label>
+      </div>
+
+      <div className={styles.formRow}>
+        <fieldset style={{border: 'none', padding: 0}}>
+          <legend>Children Age Ranges (check all that apply)</legend>
+          <label style={{display: 'inline-flex', gap: 8, alignItems: 'center', marginRight: 12}}>
+            <input type="checkbox" checked={childAges['0-2']} onChange={() => setChildAges(prev=>({...prev, '0-2': !prev['0-2']}))} /> 0-2 years
+          </label>
+          <label style={{display: 'inline-flex', gap: 8, alignItems: 'center', marginRight: 12}}>
+            <input type="checkbox" checked={childAges['3-12']} onChange={() => setChildAges(prev=>({...prev, '3-12': !prev['3-12']}))} /> 3-12 years
+          </label>
+          <label style={{display: 'inline-flex', gap: 8, alignItems: 'center'}}>
+            <input type="checkbox" checked={childAges['13-18']} onChange={() => setChildAges(prev=>({...prev, '13-18': !prev['13-18']}))} /> 13-18 years
+          </label>
+        </fieldset>
+      </div>
+
+      <div className={styles.formRow}>
+        <fieldset style={{border: 'none', padding: 0}}>
+          <legend>Type of Safari</legend>
+          <label style={{display: 'inline-flex', gap: 8, alignItems: 'center', marginRight: 12}}>
+            <input type="radio" name="safariType" checked={safariType==='Bush Only'} onChange={()=>setSafariType('Bush Only')} /> Bush Only
+          </label>
+          <label style={{display: 'inline-flex', gap: 8, alignItems: 'center', marginRight: 12}}>
+            <input type="radio" name="safariType" checked={safariType==='Bush and Beach'} onChange={()=>setSafariType('Bush and Beach')} /> Bush and Beach
+          </label>
+          <label style={{display: 'inline-flex', gap: 8, alignItems: 'center'}}>
+            <input type="radio" name="safariType" checked={safariType==='Beach Only'} onChange={()=>setSafariType('Beach Only')} /> Beach Only
+          </label>
+        </fieldset>
+      </div>
+
+      <label style={{display: 'flex', gap: 12, alignItems: 'center'}} className={styles.formGroup}>
+        <input type="checkbox" checked={requestQuote} onChange={()=>setRequestQuote(prev=>!prev)} />
+        <span>Request a Quote</span>
+      </label>
 
       <label className={styles.formGroup}>
         <span>Additional Queries</span>
